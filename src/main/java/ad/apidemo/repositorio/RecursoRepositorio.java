@@ -1,7 +1,9 @@
 package ad.apidemo.repositorio;
 
 import ad.apidemo.modelo.Recurso;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface RecursoRepositorio extends CrudRepository<Recurso,Long> {
+@Repository
+public interface RecursoRepositorio extends JpaRepository<Recurso,Long> {
 }

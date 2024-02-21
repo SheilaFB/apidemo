@@ -13,8 +13,7 @@ public class Categoria {
     String nombre;
 
     //Este nome sale do que lle puxemos en Recurso, que leva un private Categoria categoría.
-    @OneToMany(mappedBy = "categoria")
-    private List<Recurso> recursos;
+
 
     public Categoria (){}
 
@@ -38,11 +37,4 @@ public class Categoria {
         this.nombre = nombre;
     }
 
-    public List<Recurso> getRecursos() {
-        return recursos;
-    }
-
-    public void setRecursos(List<Recurso> recursos) {
-        this.recursos = recursos;
-    }
 }
